@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -12,13 +14,13 @@
 </head>
 
 <body>
-    <header class="header ">
+    <header class="header " id="main">
 
-        <div class="top-menu  px-4 pt-4">
+        <div class="top-menu  px-4 pt-4 ">
 
-            <nav class="navbar navbar-expand-lg navbar-dark ">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark ">
                 <div class="container-fluid">
-                    <!-- <div class=""> -->
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -35,16 +37,16 @@
                                 <a class="nav-link" href="#">Курсы</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Расписание</a>
+                                <a class="nav-link" href="#program">Расписание</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Преподаватели</a>
+                                <a class="nav-link" href="#teachers">Преподаватели</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Рассылка</a>
+                                <a class="nav-link" href="#subcribe">Рассылка</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Контакты</a>
+                                <a class="nav-link" href="#contact">Контакты</a>
                             </li>
                         </ul>
                         <div class="login">
@@ -109,7 +111,7 @@
                         <span class="cifer text-white">400 000 &#8381;</span>
                         <div class="progress">
                             <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="40"
-                                aria-valuemin="0" aria-valuemax="100">45%</div>
+                                aria-valuemin="0" aria-valuemax="100"></div>
 
                         </div>
                         <div class="d-flex justify-content-between w-100 aling-items-center">
@@ -126,7 +128,7 @@
         <img src="./image/main-screen__bgc.png" alt="" class="main-background">
     </header>
     <main>
-        <section class="about-content">
+        <section class="about-content" id="about">
             <div class="container">
                 <div class="main-block">
 
@@ -152,73 +154,398 @@
 
 
         </section>
-        <section class="start">
+        <section class="start" id="start">
             <div class="container">
                 <div class="d-flex align-items-center">
                     <img src="./image/icon-heading.png" alt="" class="pl-4">
                     <h2>Быстрый старт</h2>
                 </div>
                 <p class="text-start">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
-                <div class="diagram">
-                    <div class="item-block">
-                        <p class="text-top">100%</p>
-                        <div>
-                            <div class="bg-100"></div>
+
+                <div class="diagramm">
+                    <div class="container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="th-head">100%</th>
+                                    <th class="th-head">75%</th>
+                                    <th class="th-head">50%</th>
+                                    <th class="th-head">Итог</th>
+                                </tr>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <div class="bg-100"></div>
+                                    </th>
+                                    <th>
+                                        <div class="bg-75"></div>
+                                    </th>
+                                    <th>
+                                        <div class="bg-50"></div>
+                                    </th>
+                                    <th>
+                                        <div class="result">
+                                    </th>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <p class="text-start pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Netus eget velit
+                                            quisque accumsan amet
+                                            tortor. Velit, volutpat
+                                            egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                    </th>
+                                    <th>
+                                        <p class="text-start pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Netus eget velit
+                                            quisque accumsan amet
+                                            tortor. Velit, volutpat
+                                            egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                    </th>
+                                    <th>
+                                        <p class="text-start pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Netus eget velit
+                                            quisque accumsan amet
+                                            tortor. Velit, volutpat
+                                            egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                    </th>
+                                    <th>
+                                        <p class="text-start pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
+                                            Netus eget velit
+                                            quisque accumsan amet
+                                            tortor. Velit, volutpat
+                                            egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                    </th>
+                                </tr>
+                            </tbody>
+                            </thead>
+                        </table>
+                    </div>
+
+                </div>
+
+
+        </section>
+        <section class="advatages" id="advatages">
+            <div class="container">
+                <div class="wrap">
+                    <h2 class="text-center h2-padding">Получите профессию прямо сейчас</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-2 align-items-center">
+                        <div class="col">
+                            <div class="card item-advanteges">
+                                <img src="./image/icon-1.png" alt="" class="card-img-top img-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Только практические
+                                        навыки в работе
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus
+                                        eget
+                                        velit quisque accumsan amet tortor. Velit, volutpat
+                                        egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card item-advanteges">
+
+                                <img src="./image/icon-2.png" alt="" class="card-img-top img-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Только практические
+                                        навыки в работе
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Netus
+                                        eget
+                                        velit quisque accumsan amet tortor. Velit, volutpat
+                                        egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card item-advanteges">
+
+                                <img src="./image/icon-3.png" alt="" class="card-img-top img-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Только практические
+                                        навыки в работе
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Netus
+                                        eget
+                                        velit quisque accumsan amet tortor. Velit, volutpat
+                                        egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
-                    <div class="item-block">
-                        <p class="text-top">75%</p>
-
-                        <div class="bg-75"></div>
-
-                    </div>
-                    <div class="item-block">
-                        <p class="text-top">50%</p>
-                        <div class="bg-50"></div>
-
-                    </div>
-                    <div class="item-block">
-                        <p class="text-top">Итог</p>
-                        <div class="result"></div>
-
-                    </div>
-                </div>
-                <div class="diagram-text">
-
-                    <p class="text-start p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
-                        quisque accumsan amet
-                        tortor. Velit, volutpat
-                        egestas fringilla mi porttitor tempus. Placerat dui.</p>
-
-
-                    <p class="text-start p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
-                        quisque accumsan amet
-                        tortor. Velit, volutpat
-                        egestas fringilla mi porttitor tempus. Placerat dui.</p>
-
-
-                    <p class="text-start p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
-                        quisque accumsan amet
-                        tortor. Velit, volutpat
-                        egestas fringilla mi porttitor tempus. Placerat dui.</p>
-
-
-                    <p class="text-start p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
-                        quisque accumsan amet
-                        tortor. Velit, volutpat
-                        egestas fringilla mi porttitor tempus. Placerat dui.</p>
-
                 </div>
             </div>
         </section>
-        <section class="advatages"></section>
-        <section class="partners"></section>
-        <section class="program"></section>
-        <section class="teachers"></section>
-    </main>
-    <footer>
+        <section class="partners" id="partners">
+            <div class="container">
+                <div class="block-title">
+                    <img src="./image/icon-heading-2.png" alt="">
+                    <h2>Партнеры - топовые бренды</h2>
+                </div>
+                <div class="row partners-list  ">
+                    <div class="item-partners col-lg-3 col-md-6 border-line-bottom">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                    <div class="item-partners col-lg-3 col-md-6 border-line-bottom">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                    <div class="item-partners col-lg-3 col-md-6 border-line-bottom">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                    <div class="item-partners col-lg-3 col-md-6 border-line-bottom">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                </div>
+                <div class="row partners-list ">
+                    <div class="item-partners col-lg-3 col-md-6">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                    <div class="item-partners col-lg-3 col-md-6">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                    <div class="item-partners col-lg-3 col-md-6">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                    <div class="item-partners col-lg-3 col-md-6">
+                        <img src="./image/logo-partners.png" alt="" class="img-partner">
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <section class="program" id="program">
+            <div class="container">
+                <div class="block-title-program">
+                    <img src="./image/icon-heading.png" alt="">
+                    <h2>Программа обучения</h2>
+                    <p class="text-program pt-3">Больше 90% учеников прошли полный курс и смогли собрать свой первый
+                        компьютер</p>
+                </div>
+                <table class="table table-program mt-5">
+                    <tbody>
+                        <tr>
+                            <td class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <p class="p-curs">Неделя №1
+
+                                    </p>
+                                    <h5 class="text-curs ">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+                                <div class="line"></div>
+                            </td>
+                            <td rowspan="8" class="line-center"></td>
+                            <td class=""></td>
+
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td class="d-flex align-items-center">
+                                <div class="line"></div>
+                                <div class="ms-4">
+                                    <p class="p-curs">Неделя №2
+
+                                    </p>
+                                    <h5 class="text-curs">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <p class="p-curs">Неделя №3
+
+                                    </p>
+                                    <h5 class="text-curs">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+                                <div class="line"></div>
+                            </td>
+
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td class="d-flex align-items-center">
+                                <div class="line"></div>
+                                <div class="ms-4">
+                                    <p class="p-curs">Неделя №4
+
+                                    </p>
+                                    <h5 class="text-curs">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <p class="p-curs">Неделя №5
+
+                                    </p>
+                                    <h5 class="text-curs">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+                                <div class="line"></div>
+                            </td>
+
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td class="d-flex align-items-center">
+                                <div class="line"></div>
+                                <div class="ms-4">
+                                    <p class="p-curs">Неделя №6
+
+                                    </p>
+                                    <h5 class="text-curs">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="d-flex align-items-center">
+                                <div class="me-4">
+                                    <p class="p-curs">Неделя №7
+
+                                    </p>
+                                    <h5 class="text-curs">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+                                <div class="line"></div>
+                            </td>
+
+                            <td class=""></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td class="d-flex align-items-center">
+                                <div class="line"></div>
+                                <div class="ms-4">
+                                    <p class="p-curs">Неделя №8
+
+                                    </p>
+                                    <h5 class="text-curs">Красивая часть курса,
+                                        которая помогает в успехе</h5>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="teachers" id="teachers">
+            <div class="container">
+                <div class="title-teacher d-flex m-auto">
+                    <img src="./image/icon-heading.png" alt="">
+                    <h2>Ваши преподаватели</h2>
+                </div>
+                <div class="list-techer">
+                    <div class="item">
+                        <img src="./image/Ellipse 2.png" alt="" class="pb-4">
+                        <h5 class="pb-2">Дмитрий Иванов</h5>
+                        <p>Специалист по видеокартам</p>
+                        <a href="" class="text-decoration-none">
+                            <div class="biografia">
+                                <div class="btn-biograf">Биография</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img src="./image/Ellipse 2-1.png" alt="" class="pb-4">
+                        <h5 class="pb-2">Дмитрий Иванов</h5>
+                        <p>Специалист по видеокартам</p>
+                        <a href="" class="text-decoration-none">
+                            <div class="biografia">
+                                <div class="btn-biograf">Биография</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img src="./image/Ellipse 2-3.png" alt="" class="pb-4">
+                        <h5 class="pb-2">Дмитрий Иванов</h5>
+                        <p>Специалист по видеокартам</p>
+                        <a href="" class="text-decoration-none">
+                            <div class="biografia">
+                                <div class="btn-biograf">Биография</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer" id="subcribe">
+        <div class="container">
+            <div class="block-footer">
+                <h2 class="text-center mb-3">Статьи каждую неделю</h2>
+                <p class="text-center mb-5 text-footer">Больше 90% учеников прошли полный курс и смогли собрать свой
+                    первый
+                    компьютер</p>
+
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control " placeholder="Recipient's email" aria-label="Email"
+                        aria-describedby="button-addon2" />
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Подписаться</button>
+                </div>
+
+                <div class="social-icons" id="contact">
+
+                    <a href="" class="pe-3">
+                        <div class="list-item">
+                            <i class="fab fa-vk"></i>
+                        </div>
+                    </a>
+                    <a href="" class="pe-3">
+                        <div class="list-item">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </a>
+                    <a href="" class="pe-3">
+                        <div class="list-item">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="" class="pe-3">
+                        <div class="list-item">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+                <p class="pt-5">&copy; Права защищены</p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
